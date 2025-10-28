@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cup Loader Demo - Beautiful Gallery</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            color: white;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .image-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .image-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .image-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .image-info {
+            padding: 20px;
+        }
+        
+        .image-info h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .image-info p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .article-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .article-section p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        
+        .feature-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Include the cup loader script at the very beginning of body -->
+    <script src="cup-loader.js"></script>
+    
+    <div class="container">
+        <header>
+            <h1>Amazing Nature Gallery</h1>
+            <p class="subtitle">Discover the beauty of our natural world</p>
+        </header>
+        
+        <div class="gallery">
+            <div class="image-card">
+                <img src="https://picsum.photos/400/300?random=1" alt="Nature 1">
+                <div class="image-info">
+                    <h3>Mountain Peaks</h3>
+                    <p>Majestic mountains touching the clouds, showcasing nature's grandeur and raw beauty.</p>
+                </div>
+            </div>
+            
+            <div class="image-card">
+                <img src="https://picsum.photos/400/300?random=2" alt="Nature 2">
+                <div class="image-info">
+                    <h3>Forest Depths</h3>
+                    <p>Deep within ancient forests, where sunlight dances through emerald canopies.</p>
+                </div>
+            </div>
+            
+            <div class="image-card">
+                <img src="https://picsum.photos/400/300?random=3" alt="Nature 3">
+                <div class="image-info">
+                    <h3>Ocean Waves</h3>
+                    <p>The endless rhythm of ocean waves, a timeless dance between water and shore.</p>
+                </div>
+            </div>
+            
+            <div class="image-card">
+                <img src="https://picsum.photos/400/300?random=4" alt="Nature 4">
+                <div class="image-info">
+                    <h3>Desert Landscapes</h3>
+                    <p>Golden sands stretching to the horizon, painted by wind and time.</p>
+                </div>
+            </div>
+            
+            <div class="image-card">
+                <img src="https://picsum.photos/400/300?random=5" alt="Nature 5">
+                <div class="image-info">
+                    <h3>Tropical Paradise</h3>
+                    <p>Vibrant ecosystems teeming with life, color, and endless wonder.</p>
+                </div>
+            </div>
+            
+            <div class="image-card">
+                <img src="https://picsum.photos/400/300?random=6" alt="Nature 6">
+                <div class="image-info">
+                    <h3>Arctic Beauty</h3>
+                    <p>Pristine ice formations and polar landscapes of breathtaking purity.</p>
+                </div>
+            </div>
+        </div>
+        
+        <article class="article-section">
+            <h2>The Wonders of Nature Photography</h2>
+            <p>Nature photography captures the raw beauty and intricate details of our natural world. From sweeping landscapes to intimate macro shots, photographers venture into diverse environments to document Earth's incredible biodiversity and stunning vistas.</p>
+            
+            <img src="https://picsum.photos/1200/400?random=7" alt="Featured landscape" class="feature-image">
+            
+            <p>The art of nature photography requires patience, technical skill, and a deep appreciation for the environment. Photographers often spend hours waiting for the perfect light, weather conditions, or wildlife behavior to create images that inspire conservation and wonder.</p>
+            
+            <p>Modern digital photography has opened new possibilities for capturing nature's beauty. High-resolution sensors, advanced optics, and post-processing techniques allow photographers to reveal details invisible to the naked eye, from the delicate patterns on butterfly wings to the vast expanse of the Milky Way.</p>
+            
+            <img src="https://picsum.photos/1200/400?random=8" alt="Wildlife scene" class="feature-image">
+            
+            <p>Beyond its aesthetic value, nature photography plays a crucial role in environmental conservation. Images have the power to raise awareness about threatened ecosystems, endangered species, and the impacts of climate change. They remind us of what we stand to lose and inspire action to protect our planet's precious natural heritage.</p>
+        </article>
+    </div>
+</body>
+</html>
